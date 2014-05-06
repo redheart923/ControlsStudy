@@ -60,7 +60,7 @@
     <LinearLayout
 	         android:layout_width="fill_parent"
 	         android:layout_height="0dp"
-	         android:layout_weight="5"
+	         android:layout_weight="3"
 	         android:orientation="vertical">
      
         	<TextView
@@ -75,17 +75,55 @@
      <LinearLayout
 	         android:layout_width="fill_parent"
 	         android:layout_height="0dp"
-	         android:layout_weight="3"
+	         android:layout_weight="5"
 	         android:orientation="vertical"
 	         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dip"
-            android:text="@string/title"
-            android:textStyle="bold"
-            android:textSize="30sp"/>	
+            
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp">
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_homepage_selector"
+            android:text="@string/mainfrag_navi_1" />
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_famfinance_selector"
+            android:text="@string/mainfrag_navi_2" />
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_onsale_selector"
+            android:text="@string/mainfrag_navi_3" />
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_happylife_selector"
+            android:text="@string/mainfrag_navi_4" />
+
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_pointads_selector"
+            android:text="@string/mainfrag_navi_5" />
+        <RadioButton
+            style="@style/weibo_tab"
+            android:drawableTop="@drawable/h3_search_selector"
+            android:text="@string/mainfrag_navi_6" />
+    </RadioGroup>
          
      </LinearLayout>
 

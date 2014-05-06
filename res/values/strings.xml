@@ -12,6 +12,13 @@
     <string name="title">菜单选择</string>
 
     
+    <string name="mainfrag_navi_1">主页</string>
+    <string name="mainfrag_navi_2">家庭金融</string>
+    <string name="mainfrag_navi_3">限时折扣</string>
+    <string name="mainfrag_navi_4">幸福生活</string>
+    <string name="mainfrag_navi_5">积分广告</string>
+    <string name="mainfrag_navi_6">搜索</string>
+    
     <!-- 导航栏 -->
     <string name="hpage_navis_0">精选指南</string>
     <string name="hpage_navis_1">订餐服务</string>
