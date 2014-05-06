@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_titles">
+        <item>HeadPreferenceActivity</item>        
+        <item>GridViewSimpleAdapter</item>
+        <item>GridViewCustomerAdapter</item>
+    </string-array>
+    
+    <string-array name="list_activities">
+        <item>HeadPreferenceActivity</item>
+        <item>GridViewSimpleAdapter</item>
+        <item>GridViewCustomerAdapter</item>
+    </string-array>
+    
+     <string-array name="entries">
+        <item>死亡骑士</item>
+        <item>牧师</item>
+        <item>战士</item>  
+        <item>法师</item>  
+        <item>猎人</item>  
+        <item>圣骑士</item>  
+        <item>萨满祭司</item>   
+    </string-array>
+    
+     <!-- Used in app/menu examples -->
+    <string-array name="values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>  
+        <item>3</item>  
+        <item>4</item>  
+        <item>5</item>  
+        <item>6</item>  
+        <item>7</item>  
+    </string-array>
+</resources>

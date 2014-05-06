@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomerAdapter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="alliance">Alliance</string>
+    <string name="tribe">Tribe</string>
+    <string name="blood_elf">"血精灵"</string>
+    <string name="draenei">"德莱尼"</string>
+    <string name="imagedesc">previous</string>
+    <string name="title">菜单选择</string>
+
+    
+    <!-- 导航栏 -->
+    <string name="hpage_navis_0">精选指南</string>
+    <string name="hpage_navis_1">订餐服务</string>
+    <string name="hpage_navis_2">超市中心</string>
+    <string name="hpage_navis_3">积分商城</string>
+    <string name="hpage_navis_4">幸福汇</string>
+    <string name="hpage_navis_5">客服中心</string>
+    <string name="hpage_navis_6">免费试用</string>
+    <string name="hpage_navis_7">幸福直供</string>
+    <string name="hpage_navis_8">旅游中心</string>
+    <string name="hpage_navis_9">医疗中心</string>
+    <string name="hpage_discount">限时折扣</string>
+    <string name="hpage_pshop">热门商铺</string>
+    
+
+</resources>

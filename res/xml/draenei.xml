@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:key="draenei all">
+		<PreferenceCategory 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:key="draenei serisis"
+		android:title="Character Set">
+		<EditTextPreference
+            android:dialogTitle="人物名称"
+            android:key="edittext_preference"
+            android:title="人物名称" />
+		
+		<ListPreference
+            android:key="list_preferenc"		    
+            android:dialogTitle="选择职业"
+            android:entries="@array/entries"
+            android:entryValues="@array/values"
+            android:title="选择职业" />
+		
+		<SwitchPreference
+        android:key="pref_sync"
+        android:title="无敌模式"
+        android:defaultValue="true" />
+		
+		<CheckBoxPreference 
+			android:title="智能寻路" 
+			android:defaultValue="true">
+		</CheckBoxPreference>
+
+		<RingtonePreference   
+         android:key="ring_tone_pref"  
+         android:title="背景音乐"   
+         android:showSilent="true"  
+         android:ringtoneType="alarm"  
+         android:summary="Set Ringtone" />  
+				  
+	</PreferenceCategory>
+</PreferenceScreen>
