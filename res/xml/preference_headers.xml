@@ -2,13 +2,13 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
 
     <header 
-        android:fragment="com.example.customeradapter.HeadPreferenceActivity$Draenei"
+        android:fragment="com.example.ui.HeadPreferenceActivity$Draenei"
         android:icon="@drawable/draenei_large"
         android:title="Draenei"
         android:summary="@string/draenei" />
 
     <header 
-        android:fragment="com.example.customeradapter.HeadPreferenceActivity$Blood_Elf"
+        android:fragment="com.example.ui.HeadPreferenceActivity$Blood_Elf"
         android:icon="@drawable/blood_elf_large"
         android:title="BloodElf"
         android:summary="@string/blood_elf" />

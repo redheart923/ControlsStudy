@@ -1,4 +1,4 @@
-package com.example.customeradapter;
+package com.example.ui;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.customeradapter.R;
 
 
 public class ListAllActivity extends ListActivity implements OnItemClickListener {
@@ -33,7 +35,7 @@ public class ListAllActivity extends ListActivity implements OnItemClickListener
 	public void onItemClick(AdapterView<?> arg0, View target, int position, long id) {
 		try {
             Intent intent = new Intent(this, Class.forName(
-				"com.example.customeradapter." + activities[position]));
+				"com.example.ui." + activities[position]));
             startActivity(intent);
 		}
 		catch(Exception e) {

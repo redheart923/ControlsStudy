@@ -1,4 +1,4 @@
-package com.example.fragment;
+package com.example.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
@@ -13,6 +13,7 @@ import android.widget.GridView;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.view.ViewGroup.LayoutParams;
 
 import com.example.adapter.MyCustomAdapter;
@@ -26,6 +27,7 @@ import com.example.customeradapter.R.string;
 public class GridViewMenu_fragment extends Fragment {
     
     protected static final String TAG = "GridViewMenu_fragment";
+    protected static Boolean DEBUG = false;
     /**
      * 导航栏上一页按钮
      */
@@ -42,8 +44,7 @@ public class GridViewMenu_fragment extends Fragment {
      * 菜单列表
      */
     private GridView mMenuGridView = null;
-    
-    
+       
     
     /*
      * 1.Defined the content for data set  
@@ -96,7 +97,7 @@ public class GridViewMenu_fragment extends Fragment {
       mMenuGridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
           @Override
           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//              Toast.makeText(getApplication(),"你按下了"+text[position],Toast.LENGTH_SHORT).show();
+              Toast.makeText(getActivity(),"你按下了"+text[position],Toast.LENGTH_SHORT).show();
 
               switch (position){
                   case 0 :
@@ -119,7 +120,8 @@ public class GridViewMenu_fragment extends Fragment {
           @Override
           public boolean onTouch(View v, MotionEvent event) {
               // TODO Auto-generated method stub
-              Log.i(TAG, "X " + event.getX());
+              if(DEBUG)
+                  Log.i(TAG, "X " + event.getX());
               mImgBtnPrev.setAlpha(255);
               mImgBtnNext.setAlpha(255);
 

@@ -1,4 +1,4 @@
-package com.example.customeradapter;
+package com.example.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
@@ -11,9 +11,8 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.customeradapter.R;
 import com.example.fragment.FragmentFactory;
-import com.example.fragment.GridViewMenu_fragment;
-import com.example.fragment.HomepageFragment;
 
 @SuppressLint("NewApi")
 public class RadioButton_fragment extends Fragment {

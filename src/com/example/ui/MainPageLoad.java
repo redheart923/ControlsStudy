@@ -1,9 +1,11 @@
-package com.example.customeradapter;
+package com.example.ui;
 
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+
+import com.example.customeradapter.R;
 
 
 public class MainPageLoad extends FragmentActivity {

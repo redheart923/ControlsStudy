@@ -1,10 +1,12 @@
-package com.example.customeradapter;
+package com.example.ui;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.util.Log;
 import android.widget.Button;
+
+import com.example.customeradapter.R;
 
 import java.util.List;
 

@@ -15,6 +15,7 @@ import com.example.customeradapter.R;
 public class MyCustomAdapter extends BaseAdapter {
     
     private static final String TAG = "MyCustomAdapter";
+    private static final Boolean DEBUG = false;
     private LayoutInflater mInflater;
     
     private int[] mPicus;
@@ -68,9 +69,10 @@ public class MyCustomAdapter extends BaseAdapter {
         // TODO Auto-generated method stub
         ViewHolder holder;
         
-        Log.v(TAG, "in getView for position " + position + 
-                ", convertView is " +
-                ((convertView == null)?"null":"being recycled"));
+        if(DEBUG)
+            Log.v(TAG, "in getView for position " + position + 
+                    ", convertView is " +
+                    ((convertView == null)?"null":"being recycled"));
 
         if(convertView == null){
             // 找到GridView的布局文件Ĳ����ļ�

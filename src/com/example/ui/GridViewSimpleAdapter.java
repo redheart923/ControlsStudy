@@ -1,4 +1,4 @@
-package com.example.customeradapter;
+package com.example.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import com.example.customeradapter.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

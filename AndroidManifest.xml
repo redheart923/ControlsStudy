@@ -14,24 +14,26 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.customeradapter.ListAllActivity"
+            android:name="com.example.ui.ListAllActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
-            android:name="com.example.customeradapter.MainPageLoad"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.example.customeradapter.GridViewSimpleAdapter"
+            android:name="com.example.ui.MainPageLoad"
             android:label="@string/app_name" >
         </activity>
         
         <activity
-            android:name="com.example.customeradapter.HeadPreferenceActivity"
+            android:name="com.example.ui.GridViewSimpleAdapter"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.ui.HeadPreferenceActivity"
             android:label="@string/app_name" >
         </activity>
         
