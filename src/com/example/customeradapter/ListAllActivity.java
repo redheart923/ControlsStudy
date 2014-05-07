@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class MainActivity extends ListActivity implements OnItemClickListener {
+public class ListAllActivity extends ListActivity implements OnItemClickListener {
 	private String activities[] = null;
 
     @Override

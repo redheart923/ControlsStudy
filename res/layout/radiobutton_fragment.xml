@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp">
+
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_homepage_selector"
+            android:text="@string/mainfrag_navi_1" />
+
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_famfinance_selector"
+            android:text="@string/mainfrag_navi_2" />
+
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_onsale_selector"
+            android:text="@string/mainfrag_navi_3" />
+
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_happylife_selector"
+            android:text="@string/mainfrag_navi_4" />
+
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_pointads_selector"
+            android:text="@string/mainfrag_navi_5" />
+        <RadioButton
+            style="@style/brh3_tab"
+            android:drawableTop="@drawable/h3_search_selector"
+            android:text="@string/mainfrag_navi_6" />
+    </RadioGroup>
+         
+
+</LinearLayout>

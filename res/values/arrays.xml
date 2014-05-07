@@ -9,7 +9,7 @@
     <string-array name="list_activities">
         <item>HeadPreferenceActivity</item>
         <item>GridViewSimpleAdapter</item>
-        <item>GridViewCustomerAdapter</item>
+        <item>MainPageLoad</item>
     </string-array>
     
      <string-array name="entries">
