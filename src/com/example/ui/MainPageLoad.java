@@ -18,7 +18,7 @@ public class MainPageLoad extends FragmentActivity {
         Log.v(TAG, "onCreate MyCustomAdapter");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);  
-        getFragmentManager().beginTransaction().
+        getSupportFragmentManager().beginTransaction().
                 replace(R.id.maincontent, new RadioButton_fragment()).commit();
        
        

@@ -1,7 +1,7 @@
 package com.example.fragment;
 
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 import com.example.ui.GridViewMenu_fragment;
 

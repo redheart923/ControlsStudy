@@ -2,6 +2,7 @@ package com.example.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.customeradapter.R;
+
+import java.util.List;
 
 public class MyCustomAdapter extends BaseAdapter {
     
