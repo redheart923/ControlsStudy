@@ -62,19 +62,19 @@ public class GridViewMenu_fragment extends Fragment {
             
     };
 
-    public GridViewMenu_fragment() {
-        // TODO Auto-generated constructor stub
+    public View FragmentFindViewById(int id) {
+             return this.getView().findViewById(id);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onActivityCreated(savedInstanceState);
-      mScrollView = (HorizontalScrollView)this.getView().findViewById(R.id.HorScrollView);
-      mImgBtnPrev = (ImageView) this.getView().findViewById(R.id.preBtn);
-      mImgBtnNext = (ImageView) this.getView().findViewById(R.id.nextBtn);
+      mScrollView = (HorizontalScrollView)FragmentFindViewById(R.id.HorScrollView);
+      mImgBtnPrev = (ImageView) FragmentFindViewById(R.id.preBtn);
+      mImgBtnNext = (ImageView) FragmentFindViewById(R.id.nextBtn);
       
-      mMenuGridView = (GridView)this.getView().findViewById(R.id.main_page_gridview);
+      mMenuGridView = (GridView)FragmentFindViewById(R.id.main_page_gridview);
       MyCustomAdapter adapter = new MyCustomAdapter(getActivity(),image,text);
       mMenuGridView.setAdapter(adapter);
       
