@@ -1,3 +1,4 @@
+
 package com.example.ui;
 
 import android.annotation.SuppressLint;
@@ -16,35 +17,34 @@ import com.example.fragment.FragmentFactory;
 
 @SuppressLint("NewApi")
 public class RadioButton_fragment extends Fragment {
-    
+
     private FragmentManager fragmentManager;
     private RadioGroup radioGroup;
-    
-    
+
     /**
      * 绘制Fragment的视图，即加载layout布局文件
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO Auto-generated method stub       
+        // TODO Auto-generated method stub
         return inflater.inflate(R.layout.radiobutton_fragment, container, false);
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onActivityCreated(savedInstanceState);
-      
-        //Tab Fragment
+
+        // Tab Fragment
         fragmentManager = getFragmentManager();
         radioGroup = (RadioGroup) this.getView().findViewById(R.id.rg_tab);
-        //启动时选中第一个radiobutton，并启动对应的fragment
+        // 启动时选中第一个radiobutton，并启动对应的fragment
         RadioButton homeRadioButton = (RadioButton) radioGroup.getChildAt(0);
         homeRadioButton.setChecked(true);
-        fragmentManager.beginTransaction().replace(R.id.content, new GridViewMenu_fragment()).commit();
-        
-        //监听RadioButton
+        fragmentManager.beginTransaction().replace(R.id.content, new GridViewMenu_fragment())
+                .commit();
+
+        // 监听RadioButton
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -54,9 +54,7 @@ public class RadioButton_fragment extends Fragment {
                 transaction.commit();
             }
         });
-        
-    }
 
-    
+    }
 
 }

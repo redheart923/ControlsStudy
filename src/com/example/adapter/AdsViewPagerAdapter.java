@@ -1,3 +1,4 @@
+
 package com.example.adapter;
 
 import android.support.v4.view.PagerAdapter;
@@ -9,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdsViewPagerAdapter extends PagerAdapter {
-    
-    private List<View> viewsList; 
+
+    private List<View> viewsList;
 
     public AdsViewPagerAdapter(List<View> mView) {
         // TODO Auto-generated constructor stub
@@ -23,10 +24,10 @@ public class AdsViewPagerAdapter extends PagerAdapter {
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        if (viewsList != null) { 
+        if (viewsList != null) {
             return viewsList.size();
         }
-        
+
         return 0;
     }
 
@@ -38,7 +39,7 @@ public class AdsViewPagerAdapter extends PagerAdapter {
         // TODO Auto-generated method stub
         container.removeView(viewsList.get(position));
         super.destroyItem(container, position, object);
-        
+
     }
 
     /**
@@ -47,7 +48,7 @@ public class AdsViewPagerAdapter extends PagerAdapter {
     @Override
     public boolean isViewFromObject(View arg0, Object arg1) {
         // TODO Auto-generated method stub
-        return (arg0==arg1);
+        return (arg0 == arg1);
     }
 
     /**
@@ -59,7 +60,5 @@ public class AdsViewPagerAdapter extends PagerAdapter {
         ((ViewPager) container).addView(viewsList.get(position), 0);
         return viewsList.get(position);
     }
-
-
 
 }

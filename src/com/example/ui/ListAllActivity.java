@@ -1,3 +1,4 @@
+
 package com.example.ui;
 
 import android.app.ListActivity;
@@ -13,33 +14,31 @@ import android.widget.ListView;
 
 import com.example.customeradapter.R;
 
-
 public class ListAllActivity extends ListActivity implements OnItemClickListener {
-	private String activities[] = null;
+    private String activities[] = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-    	super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 
-	    Resources res = getResources();
+        Resources res = getResources();
         activities = res.getStringArray(R.array.list_activities);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, 
-            R.array.list_titles, android.R.layout.simple_list_item_1);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.list_titles, android.R.layout.simple_list_item_1);
 
         this.setListAdapter(adapter);
         ListView lv = getListView();
         lv.setOnItemClickListener(this);
-	}
+    }
 
-	public void onItemClick(AdapterView<?> arg0, View target, int position, long id) {
-		try {
+    public void onItemClick(AdapterView<?> arg0, View target, int position, long id) {
+        try {
             Intent intent = new Intent(this, Class.forName(
-				"com.example.ui." + activities[position]));
+                    "com.example.ui." + activities[position]));
             startActivity(intent);
-		}
-		catch(Exception e) {
-			Log.e("CommonControls", "Problem with activity list for main menu");
-		}
-	}
+        } catch (Exception e) {
+            Log.e("CommonControls", "Problem with activity list for main menu");
+        }
+    }
 }
