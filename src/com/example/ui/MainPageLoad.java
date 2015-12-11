@@ -16,6 +16,8 @@ public class MainPageLoad extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.v(TAG, "onCreate MyCustomAdapter");
+        Log.v(TAG, "onCreate MyCustomAdapter");
+        Log.v(TAG, "onCreate MyCustomAdapter");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);  
         getSupportFragmentManager().beginTransaction().
